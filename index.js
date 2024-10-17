@@ -2,12 +2,12 @@ let saveEl = document.getElementById("save-el");
 let countEl = document.getElementById("count-el");
 let count = 0;
 
-function increment() {
+function increment_fn() {
     count += 1;
     countEl.textContent = count;
 }
 
-function save() {
+function save_fn() {
     let countStr = count + " - ";
     saveEl.textContent += countStr;
     countEl.textContent = 0;
